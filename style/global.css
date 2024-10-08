@@ -20,11 +20,11 @@
     --text-color-secondary: #A1A1AA;
     --text-color-primary: #F4F4F5;
     
-    --brand-gradient: #FC4A1A #F7B733;
+    --brand-gradient: linear-gradient(90deg, #FC4A1A 0%, #F7B733 100%);
     --brand-color-primary: #F7B733;
     --brand-color-secondary: #FC4A1A;
 
-    --ff-sans: 'inter', system-ui, sans-serif;
+    --ff-sans: 'Inter', system-ui, sans-serif;
     --fw-base: 400;
     --fw-md: 500;
     --fw-bold: 800;
@@ -39,13 +39,18 @@
     --py-lg: 1.5rem;
     --py-xl: 3rem;
     --px-lg: 1.5rem;
+
+    --margin-mobile: 1.5rem; /* 24px */
+    --margin-desktop: 2rem;  /* 32px */
+    --margin-top-bottom-mobile: 1rem; /* 16px */
+    --margin-top-bottom-desktop: 1.5rem; /* 24px */
 }
 
 html{
-    font: var(--ff-sans);
+    font-family: var(--ff-sans);
     font-weight: var(--fw-base);
     font-size: var(--fs-base);
-    line-height: 1.6;
+    line-height: 1.6rem;
     color: var(--text-color-primary);
 }
 
@@ -77,11 +82,19 @@ a{
     color: inherit;
 }
 
+a:hover{
+    background: linear-gradient(90deg, var(--brand-color-secondary) 0%, var(--brand-color-primary) 100%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 ul[role="list"]{
     list-style: none;
 }
 
-@media (width >= 80em){
+@media (min-width: 80em){
     :root{
         --fs-lg: 2rem;
         --fs-xl: 3rem;
@@ -91,5 +104,9 @@ ul[role="list"]{
         --py-lg: 2.5rem;
         --py-xl: 5rem;
         --px-lg: 2rem;
+    }
+
+    .container {
+        margin: 0 var(--margin-desktop); /* 32px no desktop */
     }
 }
