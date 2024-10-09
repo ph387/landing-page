@@ -1,0 +1,16 @@
+#about{
+    background-color: var(--surface-color);
+
+    & .even-columns{
+        gap: 2rem;
+    }
+
+}
+
+@media (min-width: 80em){
+    #about{
+        img{
+            width: 34rem;
+        }
+    }
+}

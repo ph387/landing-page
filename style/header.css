@@ -1,5 +1,11 @@
 header{
+    margin-top: 1rem;
+
     & a:first-child{
         margin-right: auto;
+    }
+
+    @media (min-width: 80em) {
+        margin-top: 1.5rem;
     }
 }

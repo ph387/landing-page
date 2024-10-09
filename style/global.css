@@ -42,8 +42,7 @@
 
     --margin-mobile: 1.5rem; /* 24px */
     --margin-desktop: 2rem;  /* 32px */
-    --margin-top-bottom-mobile: 1rem; /* 16px */
-    --margin-top-bottom-desktop: 1.5rem; /* 24px */
+    
 }
 
 html{
@@ -92,6 +91,11 @@ a:hover{
 
 ul[role="list"]{
     list-style: none;
+}
+
+img{
+    max-width: 100%;
+    display: inline-block;
 }
 
 @media (min-width: 80em){
