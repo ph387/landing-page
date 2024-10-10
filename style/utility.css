@@ -35,8 +35,8 @@
     display: flex;
 }
 
-.itrems-center{
-    align-itrems: center;
+.items-center{
+    align-items: center;
 }
 
 .gap-1{
@@ -62,6 +62,5 @@
 
     .even-columns{
         grid-auto-flow: column;
-        grid-tremplate-columns: 1fr;
     }
 }
