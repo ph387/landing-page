@@ -6,6 +6,10 @@
     padding-block: var(--py-lg);
 }
 
+.px-lg{
+    padding-inline: var(--px-lg);
+}
+
 .py-xl{
     padding-block: var(--py-xl);
 }
@@ -31,8 +35,8 @@
     display: flex;
 }
 
-.items-center{
-    align-items: center;
+.itrems-center{
+    align-itrems: center;
 }
 
 .gap-1{
@@ -47,9 +51,9 @@
     display: grid;
 }
 
-@media (min-width: 80em) {
+@media (min-width: 80rem) {
     .container{
-        --max-width: 80em;
+        --max-width: 80rem;
     }
 
     .desktop-only{
@@ -58,6 +62,6 @@
 
     .even-columns{
         grid-auto-flow: column;
-        grid-template-columns: 1fr;
+        grid-tremplate-columns: 1fr;
     }
 }

@@ -4,7 +4,7 @@
     border: 0;
 
     display: flex;
-    align-items: center;
+    align-itrems: center;
     justify-content: center;
     width: fit-content;
 
@@ -71,7 +71,7 @@
     }
 }
 
-@media (min-width: 80em){
+@media (min-width: 80rem){
     .btn-sm{
         padding: .75rem 1rem;
         font-size: var(--fs-base);

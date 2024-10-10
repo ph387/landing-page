@@ -21,7 +21,7 @@
     }
 }
 
-@media (min-width: 80em){
+@media (min-width: 80rem){
     #hero{
 
         background: url(../assets/bg-hero-desktop.svg) no-repeat bottom center/contain ;

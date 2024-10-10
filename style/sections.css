@@ -8,7 +8,7 @@ section{
         & strong{
             display: block;
             font: var(--fw-md) var(--fs-sm)/100% var(--ff-sans);
-            letter-spacing: 0.08em;
+            letter-spacing: 0.08rem;
             text-transform: uppercase;
 
             color: var(--brand-color-primary);
@@ -25,7 +25,7 @@ section{
     }
 }
 
-@media (min-width: 80em){
+@media (min-width: 80rem){
     #mobile{
         display: none;
     }
